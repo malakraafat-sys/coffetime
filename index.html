@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coffee Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Coffee Time</h1>
+      <p>The best coffee drinks in town</p>
+    </header>
+
+    <nav>
+      <a href="#menu">Menu</a> | <a href="#about">About</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="menu">
+      <h2>Our Drinks</h2>
+      <ul class="drink-list">
+        <li>
+          Espresso – $3
+          <button onclick="addToCart('Espresso', 3)">Add</button>
+        </li>
+        <li>
+          Cappuccino – $3.5
+          <button onclick="addToCart('Cappuccino', 3.5)">Add</button>
+        </li>
+        <li>
+          Latte – $4
+          <button onclick="addToCart('Latte', 4)">Add</button>
+        </li>
+        <li>
+          Mocha – $4.5
+          <button onclick="addToCart('Mocha', 4.5)">Add</button>
+        </li>
+      </ul>
+
+      <div id="cart">
+        <h3>Your Cart</h3>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="total">0</span></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Coffee Time</h2>
+      <p>
+        Coffee Time offers freshly roasted coffee and a cozy atmosphere for
+        coffee lovers.
+      </p>
+      <img src="coffee.jpg" alt="Coffee cup" width="200" />
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <textarea
+          rows="4"
+          cols="30"
+          placeholder="Write your message here"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Coffee Time – All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background: #6b4f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #d9b99b;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  background: #6b4f4f;
+  color: white;
+  padding: 10px;
+}
+
+.drink-list button {
+  margin-left: 10px;
+  background: #6b4f4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.drink-list button:hover {
+  background: #543838;
+}
+
+#cart {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+
+#cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+#cart li {
+  margin: 5px 0;
+}
+
+.remove-btn {
+  margin-left: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
